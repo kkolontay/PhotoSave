@@ -14,15 +14,14 @@ protocol FetchDataImageDelegate: class {
 
 class PhotosListTableView: UITableView {
   var collectionView: PhotosCollectionViewController?
-  
   let sections: Array<String> = ["User ID Photos", "Certificate Photos"]
   var  userIdPhotosList: Array<PhotoItem>?
   var certificatePhotosList: Array<PhotoItem>?
   
- override init(frame: CGRect, style: UITableViewStyle) {
+  override init(frame: CGRect, style: UITableViewStyle) {
     super.init(frame: frame, style: style)
-  userIdPhotosList = DataInstance.instance.fetchPhotosId()
-  certificatePhotosList = DataInstance.instance.fetchPhotoCertificate()
+    userIdPhotosList = DataInstance.instance.fetchPhotosId()
+    certificatePhotosList = DataInstance.instance.fetchPhotoCertificate()
     delegate = self
     dataSource = self
   }
@@ -32,7 +31,7 @@ class PhotosListTableView: UITableView {
     layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
     layout.itemSize = CGSize(width: 90, height: 90)
     if collectionView == nil {
-     collectionView = PhotosCollectionViewController(collectionViewLayout: layout)
+      collectionView = PhotosCollectionViewController(collectionViewLayout: layout)
     }
     collectionView?.isIdPhoto = isIdPhoto
     collectionView?.editingItem = photoItem
@@ -44,7 +43,7 @@ class PhotosListTableView: UITableView {
       }
     }
   }
-
+  
   required init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
@@ -68,6 +67,7 @@ extension PhotosListTableView: UITableViewDataSource {
   func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
     return sections[section]
   }
+  
   public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     var cell: PhotoItemTableViewCell?
     if indexPath.row == 0 {
@@ -82,7 +82,7 @@ extension PhotosListTableView: UITableViewDataSource {
     } else {
       cell = PhotoItemTableViewCell(style: .default, reuseIdentifier: NameCell.cellImages.rawValue)
       if indexPath.section == 0 {
-      cell?.setImageFromPath((userIdPhotosList?[indexPath.row - 1].photoPath)!)
+        cell?.setImageFromPath((userIdPhotosList?[indexPath.row - 1].photoPath)!)
       } else {
         cell?.setImageFromPath((certificatePhotosList?[indexPath.row - 1].photoPath)!)
       }
@@ -90,7 +90,7 @@ extension PhotosListTableView: UITableViewDataSource {
     return cell!
   }
   
-   public func numberOfSections(in tableView: UITableView) -> Int {
+  func numberOfSections(in tableView: UITableView) -> Int {
     return sections.count
   }
 }
@@ -98,8 +98,9 @@ extension PhotosListTableView: UITableViewDataSource {
 extension PhotosListTableView: UITableViewDelegate {
   
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-      return 75
+    return 75
   }
+  
   func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool
   {
     if (indexPath.row == 0 && indexPath.section ==  0) || (indexPath.row == 0 && indexPath.section == 1) {
@@ -107,8 +108,9 @@ extension PhotosListTableView: UITableViewDelegate {
     }
     return true
   }
+  
   func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-   
+    
     if editingStyle == .delete {
       if indexPath.section == 0 {
         let item = userIdPhotosList?[indexPath.row - 1]
@@ -122,6 +124,7 @@ extension PhotosListTableView: UITableViewDelegate {
     }
     
   }
+  
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     if indexPath.section == 0 && indexPath.row == 0 {
       sequeToCollectionView(true)

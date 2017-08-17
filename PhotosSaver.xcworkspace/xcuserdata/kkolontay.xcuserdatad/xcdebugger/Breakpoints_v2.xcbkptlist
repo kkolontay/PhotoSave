@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PhotosSaver/PhotosCollection.swift"
-            timestampString = "524610160.835223"
+            timestampString = "524659475.900453"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "fetchImageList()"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PhotosSaver/ViewController.swift"
-            timestampString = "524612387.251706"
+            timestampString = "524657929.139348"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "reloadDataTable()"
             landmarkType = "7">
          </BreakpointContent>
@@ -73,14 +73,46 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PhotosSaver/PhotosCollection.swift"
-            timestampString = "524611932.771478"
+            filePath = "PhotosSaver/PhotoItemTableViewCell.swift"
+            timestampString = "524660073.642197"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "requestAuthorizationHandler(status:)"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "setImageFromPath(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PhotosSaver.PhotoItemTableViewCell.setImageFromPath (Swift.String) -&gt; ()"
+                  moduleName = "PhotosSaver"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kkolontay/Desktop/PhotosSaver/PhotosSaver/PhotoItemTableViewCell.swift"
+                  timestampString = "524660475.538951"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "724">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PhotosSaver.PhotoItemTableViewCell.setImageFromPath (Swift.String) -&gt; ()"
+                  moduleName = "PhotosSaver"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kkolontay/Desktop/PhotosSaver/PhotosSaver/PhotoItemTableViewCell.swift"
+                  timestampString = "524660475.540207"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "880">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

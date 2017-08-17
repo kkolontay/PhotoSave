@@ -17,6 +17,7 @@ class PhotosCollection: NSObject {
     return imageListCollection!
   }
   var delegateObject: FetchedImageDelegate?
+  
   private override init() {
     super.init()
     if PHPhotoLibrary.authorizationStatus() != PHAuthorizationStatus.authorized {
@@ -32,8 +33,9 @@ class PhotosCollection: NSObject {
   
   func requestAuthorizationHandler(status: PHAuthorizationStatus) {
     if PHPhotoLibrary.authorizationStatus() == PHAuthorizationStatus.authorized {
-        self.createAlbum()
+      self.createAlbum()
     }
+    fetchImageList()
   }
   
   func createAlbum() {
@@ -58,7 +60,7 @@ class PhotosCollection: NSObject {
     return object
   }
   
-  func fetchImageList() {
+ func fetchImageList() {
     imageListCollection = Array<Dictionary<String, AnyObject>>()
     if assetCollection == nil {
       return
@@ -88,8 +90,8 @@ class PhotosCollection: NSObject {
       }
     })
   }
+  
   func getRealUrl(_ url: NSURL, image: UIImage) -> String {
-   // let imageUrl          = info[UIImagePickerControllerReferenceURL] as? NSURL
     let imageName         = url.lastPathComponent
     let documentDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
     let photoURL          = NSURL(fileURLWithPath: documentDirectory)
@@ -97,12 +99,13 @@ class PhotosCollection: NSObject {
     if !FileManager.default.fileExists(atPath: localPath!.path) {
       do {
         try UIImageJPEGRepresentation(image, 1.0)?.write(to: localPath!)
-        }catch {
+      }catch {
         print("error saving file")
       }
     }
     return (localPath?.absoluteString)!
   }
+  
   func save(image: UIImage) {
     if assetCollection == nil {
       return
@@ -113,7 +116,6 @@ class PhotosCollection: NSObject {
       let albumChangeRequest = PHAssetCollectionChangeRequest(for: self.assetCollection!)
       let enumeration: NSArray = [assetPlaceHolder!]
       albumChangeRequest!.addAssets(enumeration)
-      
     }, completionHandler: { Void in
       self.fetchImageList()
     })

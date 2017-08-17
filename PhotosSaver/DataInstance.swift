@@ -11,7 +11,6 @@ import RealmSwift
 
 class DataInstance: NSObject {
   private var _realm: Realm?
-  
   static let instance = DataInstance()
   
   private  override init() {
@@ -22,6 +21,7 @@ class DataInstance: NSObject {
       print(error.localizedDescription)
     }
   }
+  
   func save(_ isIdPhoto: Bool, photoPath: String) {
     do {
       try _realm?.write {
@@ -32,6 +32,7 @@ class DataInstance: NSObject {
       
     }
   }
+  
   func save(_ item: PhotoItem) {
     do { try _realm?.write {
       _realm!.add(item)
@@ -39,7 +40,6 @@ class DataInstance: NSObject {
     } catch let error as NSError {
       print(error.localizedDescription)
     }
-    
   }
   
   func edit(_ path: String, item: PhotoItem) {
@@ -94,6 +94,5 @@ class DataInstance: NSObject {
       return 0
     }
     return count
-
   }
 }
