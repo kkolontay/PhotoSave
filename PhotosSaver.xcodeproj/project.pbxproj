@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E840D629530E85F2D90C1DB /* Pods_PhotosSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC23E337E6BE428A4B0C6227 /* Pods_PhotosSaver.framework */; };
+		D0123E0A1F4214DE002770C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0123E091F4214DE002770C9 /* AppDelegate.swift */; };
+		D0123E0C1F4214DE002770C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0123E0B1F4214DE002770C9 /* ViewController.swift */; };
+		D0123E111F4214DE002770C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0123E101F4214DE002770C9 /* Assets.xcassets */; };
+		D0123E141F4214DE002770C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0123E121F4214DE002770C9 /* LaunchScreen.storyboard */; };
+		D01D63F81F42C8CB005D51C9 /* PhotoItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01D63F71F42C8CB005D51C9 /* PhotoItemTableViewCell.swift */; };
+		D01D63FA1F42C909005D51C9 /* PhotosListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01D63F91F42C909005D51C9 /* PhotosListTableView.swift */; };
+		D01D63FC1F42C95E005D51C9 /* PhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01D63FB1F42C95E005D51C9 /* PhotoItem.swift */; };
+		D01D63FE1F42D232005D51C9 /* DataInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01D63FD1F42D232005D51C9 /* DataInstance.swift */; };
+		D01D64001F438FD7005D51C9 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01D63FF1F438FD7005D51C9 /* PhotosCollectionViewController.swift */; };
+		D0790C971F444F3100A59ED4 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0790C961F444F3100A59ED4 /* ImageCollectionViewCell.swift */; };
+		D0790C9A1F44684600A59ED4 /* PhotosCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0790C991F44684600A59ED4 /* PhotosCollection.swift */; };
+		D07A52F11F454DD200946C5B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07A52F01F454DD200946C5B /* Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2EC41B0B70FE990E821D0BE9 /* Pods-PhotosSaver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotosSaver.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotosSaver/Pods-PhotosSaver.debug.xcconfig"; sourceTree = "<group>"; };
+		D0123E061F4214DE002770C9 /* PhotosSaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotosSaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0123E091F4214DE002770C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D0123E0B1F4214DE002770C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D0123E101F4214DE002770C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0123E131F4214DE002770C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0123E151F4214DE002770C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D01D63F71F42C8CB005D51C9 /* PhotoItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoItemTableViewCell.swift; sourceTree = "<group>"; };
+		D01D63F91F42C909005D51C9 /* PhotosListTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosListTableView.swift; sourceTree = "<group>"; };
+		D01D63FB1F42C95E005D51C9 /* PhotoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoItem.swift; sourceTree = "<group>"; };
+		D01D63FD1F42D232005D51C9 /* DataInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataInstance.swift; sourceTree = "<group>"; };
+		D01D63FF1F438FD7005D51C9 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
+		D0790C961F444F3100A59ED4 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		D0790C991F44684600A59ED4 /* PhotosCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCollection.swift; sourceTree = "<group>"; };
+		D07A52F01F454DD200946C5B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E0ECCEE480E59C5B898A0605 /* Pods-PhotosSaver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotosSaver.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotosSaver/Pods-PhotosSaver.release.xcconfig"; sourceTree = "<group>"; };
+		EC23E337E6BE428A4B0C6227 /* Pods_PhotosSaver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotosSaver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0123E031F4214DE002770C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E840D629530E85F2D90C1DB /* Pods_PhotosSaver.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D008A49B6996B4507EAC8F9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2EC41B0B70FE990E821D0BE9 /* Pods-PhotosSaver.debug.xcconfig */,
+				E0ECCEE480E59C5B898A0605 /* Pods-PhotosSaver.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D0123DFD1F4214DE002770C9 = {
+			isa = PBXGroup;
+			children = (
+				D0123E081F4214DE002770C9 /* PhotosSaver */,
+				D0123E071F4214DE002770C9 /* Products */,
+				D008A49B6996B4507EAC8F9D /* Pods */,
+				F95E552D08BE56AAE440D5EA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D0123E071F4214DE002770C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0123E061F4214DE002770C9 /* PhotosSaver.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0123E081F4214DE002770C9 /* PhotosSaver */ = {
+			isa = PBXGroup;
+			children = (
+				D0790C981F4467F400A59ED4 /* Services */,
+				D01D63F61F42C87E005D51C9 /* View */,
+				D01D63F51F42C874005D51C9 /* Controller */,
+				D01D63F41F42C866005D51C9 /* Model */,
+				D0123E091F4214DE002770C9 /* AppDelegate.swift */,
+				D0123E101F4214DE002770C9 /* Assets.xcassets */,
+				D0123E121F4214DE002770C9 /* LaunchScreen.storyboard */,
+				D0123E151F4214DE002770C9 /* Info.plist */,
+			);
+			path = PhotosSaver;
+			sourceTree = "<group>";
+		};
+		D01D63F41F42C866005D51C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D01D63FB1F42C95E005D51C9 /* PhotoItem.swift */,
+				D01D63FD1F42D232005D51C9 /* DataInstance.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D01D63F51F42C874005D51C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D0123E0B1F4214DE002770C9 /* ViewController.swift */,
+				D01D63FF1F438FD7005D51C9 /* PhotosCollectionViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D01D63F61F42C87E005D51C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D01D63F71F42C8CB005D51C9 /* PhotoItemTableViewCell.swift */,
+				D01D63F91F42C909005D51C9 /* PhotosListTableView.swift */,
+				D0790C961F444F3100A59ED4 /* ImageCollectionViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D0790C981F4467F400A59ED4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D0790C991F44684600A59ED4 /* PhotosCollection.swift */,
+				D07A52F01F454DD200946C5B /* Extensions.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		F95E552D08BE56AAE440D5EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC23E337E6BE428A4B0C6227 /* Pods_PhotosSaver.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0123E051F4214DE002770C9 /* PhotosSaver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0123E181F4214DE002770C9 /* Build configuration list for PBXNativeTarget "PhotosSaver" */;
+			buildPhases = (
+				061A27E1F9B84CECC979B93F /* [CP] Check Pods Manifest.lock */,
+				D0123E021F4214DE002770C9 /* Sources */,
+				D0123E031F4214DE002770C9 /* Frameworks */,
+				D0123E041F4214DE002770C9 /* Resources */,
+				2E4A83B11AF8E9D3202F579F /* [CP] Embed Pods Frameworks */,
+				6EF7D25D0DC8D6C4462A58FF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotosSaver;
+			productName = PhotosSaver;
+			productReference = D0123E061F4214DE002770C9 /* PhotosSaver.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0123DFE1F4214DE002770C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = kkolontay.com;
+				TargetAttributes = {
+					D0123E051F4214DE002770C9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 6T645D53J9;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D0123E011F4214DE002770C9 /* Build configuration list for PBXProject "PhotosSaver" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0123DFD1F4214DE002770C9;
+			productRefGroup = D0123E071F4214DE002770C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0123E051F4214DE002770C9 /* PhotosSaver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0123E041F4214DE002770C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0123E141F4214DE002770C9 /* LaunchScreen.storyboard in Resources */,
+				D0123E111F4214DE002770C9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		061A27E1F9B84CECC979B93F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2E4A83B11AF8E9D3202F579F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotosSaver/Pods-PhotosSaver-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EF7D25D0DC8D6C4462A58FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotosSaver/Pods-PhotosSaver-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0123E021F4214DE002770C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D01D63FE1F42D232005D51C9 /* DataInstance.swift in Sources */,
+				D01D63FA1F42C909005D51C9 /* PhotosListTableView.swift in Sources */,
+				D01D63FC1F42C95E005D51C9 /* PhotoItem.swift in Sources */,
+				D0790C9A1F44684600A59ED4 /* PhotosCollection.swift in Sources */,
+				D01D64001F438FD7005D51C9 /* PhotosCollectionViewController.swift in Sources */,
+				D07A52F11F454DD200946C5B /* Extensions.swift in Sources */,
+				D0123E0C1F4214DE002770C9 /* ViewController.swift in Sources */,
+				D0790C971F444F3100A59ED4 /* ImageCollectionViewCell.swift in Sources */,
+				D01D63F81F42C8CB005D51C9 /* PhotoItemTableViewCell.swift in Sources */,
+				D0123E0A1F4214DE002770C9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D0123E121F4214DE002770C9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0123E131F4214DE002770C9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0123E161F4214DE002770C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0123E171F4214DE002770C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0123E191F4214DE002770C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EC41B0B70FE990E821D0BE9 /* Pods-PhotosSaver.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6T645D53J9;
+				INFOPLIST_FILE = PhotosSaver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kkolontay.PhotosSaver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D0123E1A1F4214DE002770C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0ECCEE480E59C5B898A0605 /* Pods-PhotosSaver.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6T645D53J9;
+				INFOPLIST_FILE = PhotosSaver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kkolontay.PhotosSaver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0123E011F4214DE002770C9 /* Build configuration list for PBXProject "PhotosSaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0123E161F4214DE002770C9 /* Debug */,
+				D0123E171F4214DE002770C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0123E181F4214DE002770C9 /* Build configuration list for PBXNativeTarget "PhotosSaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0123E191F4214DE002770C9 /* Debug */,
+				D0123E1A1F4214DE002770C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0123DFE1F4214DE002770C9 /* Project object */;
+}
