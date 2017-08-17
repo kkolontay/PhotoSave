@@ -51,18 +51,21 @@ class PhotosCollectionViewController: UICollectionViewController, UIImagePickerC
   override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ImageCollectionViewCell
     cell.image = (imageList?[indexPath.row]["image"])! as! UIImage
-      return cell
+    return cell
   }
   
   override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     if let path: String = imageList![indexPath.row]["path"] as? String {
-      //let pathString = path.absoluteString
-    if  DataInstance.instance.search(path) == nil {
-    DataInstance.instance.save(isIdPhoto, photoPath: path )
-      NotificationCenter.default.post(name: NSNotification.Name(rawValue: "DataChanged"), object: nil)
-      navigationController?.popViewController(animated: true)
-    } else {
-      self.alertMessage("You have this photo, please choose another.")
+      if  DataInstance.instance.search(path) == nil {
+        if editingItem == nil {
+          DataInstance.instance.save(isIdPhoto, photoPath: path )
+        } else {
+          DataInstance.instance.edit(path, item: editingItem!)
+        }
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "DataChanged"), object: nil)
+        navigationController?.popViewController(animated: true)
+      } else {
+        self.alertMessage("You have this photo, please choose another.")
       }
     }
   }
